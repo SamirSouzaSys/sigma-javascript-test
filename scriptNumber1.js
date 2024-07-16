@@ -1,4 +1,5 @@
-/*Script Number One:
+/*
+Script Number One:
 
 The DOM API includes a convenient method called querySelectorAll, which allows you to get a collection containing all elements that match a specified selector.
 The problem is that the returned collection is not an Array; it’s a NodeList. Despite its similarity to an array, it lacks many array methods. For example, it does not have the map(…) method, so you cannot do querySelectorAll.map(…) , and attempting this will result in an error.
