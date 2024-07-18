@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Samir Souza - Sigma Test - getCurrentScript
+    </title>
+    <script src="./dist/scriptNumber3.js"></script>     
+    <script>
+        // Inline script example
+        console.log(getCurrentScript());
+    </script>
+</head>
+<body>
+    <script>
+        // Another inline script example
+        console.log(getCurrentScript()); // Should return a reference to this script
+    </script>
+    <script src="./dist/exampleScriptToNumber3.js"></script>
+</body>
+</html>
