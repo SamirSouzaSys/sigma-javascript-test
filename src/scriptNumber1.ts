@@ -12,25 +12,6 @@ document.querySelectorAll('div').map(element => element.className);
 // returns an array of class names of the elements
 */
 
-// if (typeof NodeList.prototype.map !== 'function') {
-//     NodeList.prototype.map = function (callback, thisArg) {
-//         thisArg = thisArg || window
-//         let resultArray = []
-//         for (let i: number = 0; i < this.length; i++) {
-//             resultArray.push(callback.call(thisArg, this[i], i, this))
-//         }
-//         return resultArray
-//     }
-// }
-
-// document.addEventListener('DOMContentLoaded', (event) => {
-//     const innerHTMLs = document.querySelectorAll('div').map(element => element.className)
-//     console.log(innerHTMLs)
-// })
-
-////////////////////////
-// NodeListOf<Element> => NodeListOf<HTMLFormElement>
-
 if (typeof NodeList.prototype.map !== 'function') {
     NodeList.prototype.map = function<T> (callback: (node: Node, index: number, nodeList: NodeList) => T, thisArg?: any): T[] {
         thisArg = thisArg || window
